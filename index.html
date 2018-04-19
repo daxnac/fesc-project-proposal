@@ -7,6 +7,8 @@
   <meta property="og:title" content="Florida Energy Systems Consortium (FESC)">
   <meta property="og:description" content="The goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis.">
   <meta property="og:image" content="https://daxnac.github.io/fesc-project-proposal/images/Solar.jpg">
+  <meta property="og:image:width" content="244">
+  <meta property="og:image:height" content="206">
   <meta property="og:url" content="https://daxnac.github.io/fesc-project-proposal/">
   <meta property="og:type" content="website">
   <!-- twitter tags -->
@@ -48,7 +50,7 @@
   </section>
   <footer>
     <div class="social">
-      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check+this+out%3Ahttps%3A%2F%2Fdaxnac.github.io%2Ffesc-project-proposal%2F"></a>
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check+this+out"></a>
       <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdaxnac.github.io%2Fsocial-media%2F&layout=button_count&size=small&mobile_iframe=false&width=69&height=20&appId" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
     </div>
     <div class="copy">Copyright &copy; 2018 FESC. All rights reserved.</div>
@@ -58,18 +60,20 @@
     //Twitter share button
     window.twttr = (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0],
-      t = window.twttr || {};
+        t = window.twttr || {};
       if (d.getElementById(id)) return t;
       js = d.createElement(s);
       js.id = id;
       js.src = "https://platform.twitter.com/widgets.js";
       fjs.parentNode.insertBefore(js, fjs);
+      
       t._e = [];
       t.ready = function(f) {
-      t._e.push(f);
+        t._e.push(f);
       };
       return t;
     }(document, "script", "twitter-wjs"));
+
     // Facebook share button 
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
