@@ -1,6 +1,8 @@
 body {
   font-size: 100%;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -10,153 +12,37 @@ p {
   padding: .6rem;
 }
 
-.navbar-brand img {
-  max-width: 70%;
-  height: auto;
-}
-
-/* TODO: size images manually so this is not necessary */
-img {
-  max-width: 100%;
-}
-
-/***************** NAV *****************/
-
-.fa {
-  color: #4E75C6;
-}
-
-/**************** HERO *****************/
+/***************** NAV ***************/
 
 header {
   display: flex;
-  align-items: center;
-  color: #4E75C6;
+  justify-content: space-between;
+  margin: 1rem 2rem 1rem 2rem;
 }
 
-header img {
-  max-height: 100%;
-}
+/***************** NAV ***************/
 
-h1 .logo-w {
-  font-size: 2.5rem;
-}
-
-/** Center header and wrap title when screen size shrinks to <700px **/
-@media (max-width: 700px) {
-  header {
-  display: flex;
-  flex-flow: wrap; 
-  color: #4E75C6;
-  }
-}
-
-@media (max-width: 700px) {
-  header img {
-  margin: auto;
-  display: block;
-  max-height: 100%;
-  }
-}
-
-@media (max-width: 700px) {
-  h1 {
-  display: block;
-  text-align: center;
-  }
-}
-
-/**************** ASIDE ****************/
-
-input[type="submit"] {
-  padding: .25rem;
-  background-color: #3D7FCF;
-  border: 1px solid #3D7FCF;
-  border-radius: 5px;
-  font-size: .75rem;
-  color: white;
-}
-
-form {
-  padding: 5px;
-  text-align: center;
-}
-
-form label {
+nav {
+  background-color: #00b3b3;
   width: 100%;
-  color:  #4d4d4d;
 }
 
-#feedback {
-  text-align: center;
-  color: green;
-  font-size: 0.9em;
-}
-/*********** PRODUCTS SECTION ***********/
-
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  color: #4E75C6;
-}
-
-h3 {
-  font-size: 1.2rem;
-  text-align: center;
-  color: #2d2d2d;
-}
-
-.item-container {
+nav ul {
   display: flex;
-  flex-flow: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 1rem;
 }
-
-.module {
-  width: 16rem;
-  height: auto;
-  padding: .8rem;
-  margin: .3rem;
-  border: 1px solid rgb(217, 230, 242);
-  border-radius: 5px;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-/** adjust .module width as it shrinks to two column  **/
-@media (max-width: 1200px) {
-  .module {
-    width: 48%;
-    height: auto;
-  }
-}
-  
-/** adjust .module width as it shrinks to one column  **/
-@media (max-width: 600px) {
-  .module {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.module img {
-  margin: auto;
-  display: block;
-  padding: .5rem;
-}
-
-.module:hover {
-  box-shadow: 2px 2px 15px #888888;
-  cursor: pointer;
+nav li {
+  float: left;
+  display: flex;
 }
 
 /***************** FOOTER ***************/
 
 footer {
-  background-color: #4E75C6;
+  background-color:  #00b3b3;
   padding: 3rem;
-}
-
-footer p {
-  text-align: center;
-  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }

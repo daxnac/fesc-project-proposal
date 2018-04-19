@@ -1,22 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>FESC Industry</title>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- facebook tags -->
+  <meta property="og:title" content="Florida Energy Systems Consortium (FESC)">
+  <meta property="og:description" content="The goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis.">
+  <meta property="og:image" content="https://daxnac.github.io/social-media/images/220px-Alternative_Energies.jpg">
+  <meta property="og:url" content="https://daxnac.github.io/social-media/">
+  <meta property="og:type" content="website">
+  <!-- twitter tags -->
+  <meta name="twitter:title" content="Florida Energy Systems Consortium (FESC)">
+  <meta name="twitter:description" content="The goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis.">
+  <meta name="twitter:image" content="https://daxnac.github.io/social-media/images/220px-Alternative_Energies.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="stylesheet" href="styles/main.css"> 
+  <title>Florida Energy Systems Consortium (FESC) - Home</title>  
 </head>
 <body>
-<header></header>
-<nav>
-  <ul>
-    <li>Home</li>
-    <li>Energy Idustry</li>
-    <li>Education</li>
-  </ul>
-</nav>
-<aside></aside>
-<section></section>
-<footer>
-  <div>Facebook</div>
-  <div>Copyright &copy; 2018 FESC. All rights reserved.</div>
-</footer>
+  <header>
+    <div class="fesc-logo"><img src="images/fesc-logo.png" alt="FESC Logo"></div>
+    <div class="fesc-text"><h2>Florida Energy Systems Consortium (FESC)</h2></div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="industry.html">Energy Industry/Research</a></li>
+      <li><a href="education.html">Education</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1>Energy Industry</h1>
+    <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.</p>
+
+    <p>This section provides links to energy related companies for informational purposes only. Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by Florida Energy Systems Consortium.</p>
+
+    <p>Please click the sub-menus on the left to see the Florida Energy Industry list. Please contact Canan Balaban at cbalaban@ufl.edu if you would like your company to be listed.</p>
+  </section>
+  <section>
+    <h1>Research</h1>
+    <p>The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most current university research was focused on specific energy components, a research gap existed from a systems perspective. It was believed that combining expertise at the State universities would position university researchers to address energy systems in a manner not possible at a single university. Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach.</p>
+
+    <p>The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida. This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.</p>
+  </section>
+  <footer>
+    <div class="social">
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check+this+out%3Ahttps%3A%2F%2Fdaxnac.github.io%2Fsocial-media%2F"></a>
+      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdaxnac.github.io%2Fsocial-media%2F&layout=button_count&size=small&mobile_iframe=false&width=69&height=20&appId" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="copy">Copyright &copy; 2018 FESC. All rights reserved.</div>
+  </footer>
+
+  <script>
+    //Twitter share button
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      t._e = [];
+      t.ready = function(f) {
+      t._e.push(f);
+      };
+      return t;
+    }(document, "script", "twitter-wjs"));
+    // Facebook share button 
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
 </html>
