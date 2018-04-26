@@ -23,8 +23,13 @@ header {
 /***************** NAV ***************/
 
 nav {
-  background-color: #00b3b3;
+  background-color: #00784B;
   width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 nav ul {
@@ -40,7 +45,7 @@ nav li {
 /***************** FOOTER ***************/
 
 footer {
-  background-color:  #00b3b3;
+  background-color: #00784B;
   padding: 3rem;
   display: flex;
   flex-direction: column;
