@@ -1,47 +1,66 @@
 /* Scss Document */
+
+$green: #00784B;
+$red: #981C1E;
+$beige: #CEB36C;
+$blue: #263995;
+$orange: #F57722;
+$white: #FFFFFF;
+$black: #1A1A1A;
+
 body {
   font-size: 100%;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #1A1A1A; }
+	color: $black;
+}
 
 p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: lighter;
-  color: #1A1A1A;
-  padding: .6rem; }
+  color: $black;
+  padding: .6rem;
+}
 
 /***************** NAV ***************/
+
 header {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 2rem 1rem 2rem; }
+  margin: 1rem 2rem 1rem 2rem;
+}
 
 /***************** NAV ***************/
+
 nav {
-  background-color: #00784B;
-  width: 100%; }
+  background-color: $green;
+  width: 100%;
+}
 
 nav a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 nav ul {
   display: flex;
   justify-content: space-around;
-  padding: 1rem; }
-
+  padding: 1rem;
+}
 nav li {
   float: left;
-  display: flex; }
+  display: flex;
+}
 
 /***************** FOOTER ***************/
+
 footer {
-  background-color: #00784B;
+  background-color: $green;
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  color: white; }
+  color: white;
+}
 
-/*# sourceMappingURL=main.css.map */
+
