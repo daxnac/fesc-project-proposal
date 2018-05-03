@@ -1,25 +1,51 @@
 /* Scss Document */
 body {
   font-size: 100%;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
   margin: 0;
-  padding: 0;
   color: #1A1A1A; }
 
 p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   color: #1A1A1A;
   padding: .6rem; }
 
-/***************** NAV ***************/
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif; }
+
+main {
+  margin: 0rem 3rem 0rem 3rem; }
+
+.slideShow {
+  background-image: url(../images/wind-energy.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  margin-top: -1.3rem; }
+  .slideShow div {
+    height: 23rem;
+    padding: 20px; }
+    .slideShow div h1, .slideShow div p {
+      font-family: 'Montserrat', sans-serif;
+      color: #FFFFFF; }
+
+a {
+  font-family: 'Open Sans', sans-serif; }
+
+/***************** HEADER ***************/
 header {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 2rem 1rem 2rem; }
+  margin: 1rem 2rem 1rem 2rem;
+  color: #981C1E; }
+
+.fesc-text {
+  margin-top: 1rem; }
 
 /***************** NAV ***************/
 nav {
+  font-family: 'Open Sans', sans-serif;
   background-color: #00784B;
   width: 100%; }
 
@@ -42,6 +68,55 @@ footer {
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  color: white; }
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em; }
+
+/****** GRID ************************/
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%; }
+
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+  width: 100%; }
+
+.span_2_of_3 {
+  width: 66.13%; }
+
+.span_1_of_3 {
+  width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+
+  .span_3_of_3, .span_2_of_3, .span_1_of_3 {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
