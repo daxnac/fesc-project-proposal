@@ -27,16 +27,15 @@
     <div class="fesc-logo"><img src="images/fesc-logo.png" alt="FESC Logo"></div>
     <div class="fesc-text"><h2>Florida Energy Systems Consortium (FESC)</h2></div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="industry.html">Energy Industry/Research</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="#">Facilities</a></li>
-      <li><a href="#">Advisory Board</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
+  <nav class="topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+      <a href="industry.html"  class="active">Energy Industry/Research</a>
+      <a href="education.html">Education</a>
+      <a href="#">Facilities</a>
+      <a href="#">Advisory Board</a>
+      <a href="#">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+   </nav>
   <!-- Aside used on pages when needed for related links or resources -->
   <main>
     <div class="section group">
@@ -72,7 +71,7 @@
     </div>
     <div class="copy">Copyright &copy; 2018 FESC. All rights reserved.</div>
   </footer>
-
+  <script src="js/script.js"></script>
   <script>
     //Twitter share button
     window.twttr = (function(d, s, id) {
