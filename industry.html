@@ -19,6 +19,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="styles/main.css"> 
   <title>Florida Energy Systems Consortium (FESC) - Energy Industry</title>  
 </head>
@@ -28,20 +32,46 @@
     <div class="fesc-text"><h2>Florida Energy Systems Consortium (FESC)</h2></div>
   </header>
   <nav class="topnav" id="myTopnav">
-			<a href="index.html">Home</a>
-      <a href="industry.html"  class="active">Energy Industry/Research</a>
-      <a href="education.html">Education</a>
-      <a href="#">Facilities</a>
-      <a href="#">Advisory Board</a>
-      <a href="#">Contact Us</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-   </nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="industry.html">Energy Industry/Research</a>
+    <a href="education.html">Education</a>
+    <a href="#">Facilities</a>
+    <a href="#">Advisory Board</a>
+    <a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-search"></i></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <!-- W3 Modal for Googles Custom Search -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container"> 
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>Search this Site</h2>
+        </header>
+        <div class="w3-container">
+          <script>
+            (function() {
+              var cx = '006168139775620801051:dpwr7o_qpgm';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- Aside used on pages when needed for related links or resources -->
   <main>
     <div class="section group">
       <div class="col span_2_of_3">
         <section>
-          <h1>Energy Industry</h1>
+          <h2>Energy Industry</h2>
           <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&amp;D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.</p>
 
           <p>This section provides links to energy related companies for informational purposes only. Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by Florida Energy Systems Consortium.</p>
@@ -49,7 +79,7 @@
           <p>Please click the sub-menus on the left to see the Florida Energy Industry list. Please contact Canan Balaban at cbalaban@ufl.edu if you would like your company to be listed.</p>
         </section>
         <section>
-          <h1>Research</h1>
+          <h2>Research</h2>
           <p>The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most current university research was focused on specific energy components, a research gap existed from a systems perspective. It was believed that combining expertise at the State universities would position university researchers to address energy systems in a manner not possible at a single university. Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach.</p>
 
           <p>The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida. This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.</p>
@@ -57,7 +87,7 @@
       </div>
       <div class="col span_1_of_3">	
         <aside>
-          <h1>Contact</h1>
+          <h3>Contact</h3>
           <p>Please contact Canan Balaban at <a href="mailto:cbalaban@ufl.edu">cbalaban@ufl.edu</a> if you would like your company to be listed.</p>
         </aside>
       </div>

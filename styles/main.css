@@ -11,17 +11,17 @@ p {
   padding: .6rem;
   line-height: 1.7; }
 
-h1, h2, h3, h4 {
+h1 h2, h3, h4 {
   font-family: 'Montserrat', sans-serif; }
 
 main {
-  margin: 0rem 3rem 0rem 3rem; }
+  margin: 0rem 5rem 0rem 5rem; }
 
 .slideShow {
   background-image: url(../images/2048px-Alternative_Energies.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: auto; }
+  height: 30rem; }
   .slideShow div {
     height: 23rem;
     padding: 20px; }
@@ -31,6 +31,32 @@ main {
 
 a {
   font-family: 'Open Sans', sans-serif; }
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 100%;
+    height: auto; } }
+.btn {
+  border: 2px solid #F57722;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 10rem;
+  height: auto;
+  text-align: center;
+  text-decoration: none; }
+
+/* Green */
+.success {
+  border-color: #F57722;
+  color: #FFFFFF; }
+
+.success:hover {
+  background-color: #F57722;
+  color: #FFFFFF;
+  transition: .5s; }
 
 /***************** HEADER ***************/
 header {

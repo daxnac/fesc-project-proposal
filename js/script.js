@@ -7,7 +7,3 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
-function myFunction(x) {
-    x.classList.toggle("change");
-}
