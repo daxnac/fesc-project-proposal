@@ -24,7 +24,7 @@
   <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="styles/main.css"> 
-  <title>Florida Energy Systems Consortium (FESC) - Energy Industry</title>  
+  <title>Florida Energy Systems Consortium (FESC) - Contact</title>  
 </head>
 <body>
   <header>
@@ -33,10 +33,10 @@
   </header>
   <nav class="topnav" id="myTopnav">
     <a href="index.html">Home</a>
-    <a href="industry.html" class="active">Energy Industry/Research</a>
+    <a href="industry.html">Energy Industry/Research</a>
     <a href="education.html">Education</a>
     <a href="#">Facilities</a>
-    <a href="contact.html">Contact Us</a>
+    <a href="contact.html" class="active">Contact Us</a>
     <a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-search"></i></a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -66,32 +66,74 @@
       </div>
     </div>
   </nav>
-  <div class="indHeader">
-   <h2>Energy Industry &amp; Research</h2>
+  <div class="eneHeader">
+    <h2>Contact &amp; Directions</h2>
   </div>
   <main>
     <div class="section group">
       <div class="col span_2_of_3">
         <section>
-          <h3>Industry</h3>
-          <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&amp;D and innovation leaders of tomorrow. FESC’s Industrial Partners Program designed to be an effective and efficient avenue for industry to guide FESC activities and benefit from the research, education and outreach activities of the Consortium. As such, part of FESC’s mission is to establish partnerships with companies and other organizations that will play an important role in achieving our goals and objectives. FESC promotes a meaningful exchange between the partner universities and industrial partners from small, medium, and large companies, as well as other organizations such as incubators, research parks, investors, entrepreneurs, and government laboratories.</p>
-          <p>This section provides links to energy related companies for informational purposes only. Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by Florida Energy Systems Consortium.</p>
-          <p>Please click the sub-menus on the left to see the Florida Energy Industry list. Please contact Canan Balaban at cbalaban@ufl.edu if you would like your company to be listed.</p>
+          <h3>Send us feedback</h3>
+          <form onsubmit="getEmail();" name="contact" id="emailForm">
+            <label>Full Name
+              <input type="text" id="fullname" name="fullname" placeholder="John Doe..." required>
+            </label>
+            <label>Email Address
+              <input type="email" id="emailadd" name="email" placeholder="e.g. john.doe@gmail.com" required>  
+            </label>
+            <label>Topic Area
+              <select id="fescAreas" name="area">
+                <option value="Education">Education</option>
+                <option value="Industry">Industry</option>
+                <option value="Energy Research">Energy Research</option>
+                <option value="University Partners">University Partners</option>
+                <option value="Jobs">Jobs</option>
+              </select>
+            </label>
+            <label>Feedback
+              <textarea id="subject" name="feedback" placeholder="Enter your questions or feedback here..." style="height:200px"></textarea>
+            </label>
+            <input type="submit" value="Submit">
+          </form>
         </section>
+        
         <section>
-          <h3>Research</h3>
-          <p>The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most current university research was focused on specific energy components, a research gap existed from a systems perspective. It was believed that combining expertise at the State universities would position university researchers to address energy systems in a manner not possible at a single university. Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach.</p>
-          <p>The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida. This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.</p>
+          <h3>Map & Directions</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.7479042419454!2d-82.34361012335077!3d29.649347764757504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe611193d4efb92ce!2sGrinter+Hall!5e0!3m2!1sen!2sus!4v1526575007818" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
       </div>
-      <!-- Aside used on pages when needed for related links or resources -->
-      <div class="col span_1_of_3">	
-        <aside>
-          <h4><i class="fas fa-envelope"></i>&nbsp;CONTACT</h4>
-          <p>Please contact Canan Balaban at <a href="mailto:cbalaban@ufl.edu">cbalaban@ufl.edu</a> if you would like your company to be listed.</p>
-        </aside>
+      <aside class="col span_1_of_3">
+        <h4><i class="fas fa-address-card"></i>&nbsp;MAIN CONTACTS</h4><br>
+        <div class="card">
+          <img src="images/David_Norton-small-225x300.jpg" alt="Avatar">
+          <div class="container">
+          <p><b>Dr. David Norton</b></p> 
+          <p>Interim Director</p> 
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <img src="images/image00218-150x150.jpg" alt="Avatar">
+          <div class="container">
+          <p><b>Ms. Canan “Janan” Balaban</b></p> 
+          <p>Associate Director
+          Email: cbalaban@ufl.edu
+          Phone: 352 294 2027</p>
+          </div>
+        </div>
+        
+        <br><br><br>
+        Ms. Canan “Janan” Balaban; Associate Director
+        Email: cbalaban@ufl.edu
+        Phone: 352 294 2027
+        <br><br>
+        <h4><i class="fas fa-map-marker"></i>&nbsp;ADDRESS</h4><br>
+        Telephone: 352 294 2027
+        272 Grinter Hall
+        P.O. Box 115500
+        Gainesville, FL 32611-5500
+      </aside>
       </div>
-    </div>
   </main>
   
   <footer>

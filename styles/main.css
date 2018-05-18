@@ -1,7 +1,6 @@
 /* Scss Document */
 body {
   font-size: 100%;
-  margin: 0;
   color: #1A1A1A; }
 
 p {
@@ -17,6 +16,9 @@ h1 h2, h3, h4 {
 main {
   margin: 0rem 5rem 0rem 5rem; }
 
+@media only screen and (max-width: 480px) {
+  main {
+    margin: 0rem 1rem 0rem 1rem; } }
 .slideShow {
   background-image: url(../images/2048px-Alternative_Energies.jpg);
   background-repeat: no-repeat;
@@ -58,6 +60,9 @@ a {
   color: #FFFFFF;
   transition: .5s; }
 
+.aboutFesc {
+  text-align: center; }
+
 /***************** HEADER ***************/
 header {
   display: flex;
@@ -68,6 +73,25 @@ header {
 .fesc-text {
   margin-top: 1rem; }
 
+.eneHeader, .indHeader {
+  width: 100%;
+  padding: .5rem .5rem .5rem 5rem; }
+
+@media only screen and (max-width: 600px) {
+  .eneHeader, .indHeader {
+    width: 100%;
+    padding: 1rem; }
+
+  h2 {
+    font-size: 1.8rem; } }
+.eneHeader {
+  background-color: #4CAF50;
+  color: #FFFFFF; }
+
+.indHeader {
+  background-color: #4CAF50;
+  color: #FFFFFF; }
+
 /***************** NAV ***************/
 /* Add a black background color to the top navigation */
 .topnav {
@@ -75,7 +99,6 @@ header {
   overflow: hidden;
   font-family: 'Open Sans', sans-serif; }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -85,7 +108,6 @@ header {
   text-decoration: none;
   font-size: 17px; }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black; }
@@ -121,17 +143,65 @@ header {
     float: none;
     display: block;
     text-align: left; } }
+aside h4 {
+  color: #F57722; }
+
+/************** CONTACT FORM *****************/
+input[type=text], select, textarea, email {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+input[type=email], email {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 50%; }
+  .card img {
+    width: 100%; }
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.container {
+  padding: 2px 16px; }
+
 /***************** FOOTER ***************/
 footer {
   background-color: #00784B;
-  padding: 3rem;
+  padding: 2rem;
+  margin: 1.5rem 0 0 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: white;
-  font-family: 'Open Sans', sans-serif;
   font-size: .8em; }
 
-/****** GRID ************************/
+/***************** GRID ****************/
 /*  SECTIONS  */
 .section {
   clear: both;
@@ -143,6 +213,16 @@ footer {
   display: block;
   float: left;
   margin: 1% 0 1% 1.6%; }
+
+.resCont, .eneCont, .eduCont {
+  text-align: center; }
+  .resCont a, .eneCont a, .eduCont a {
+    background-color: #263995;
+    color: #FFFFFF;
+    padding: .8rem 1rem .8rem 1rem;
+    text-decoration: none; }
+  .resCont img, .eneCont img, .eduCont img {
+    border-radius: 1rem; }
 
 .col:first-child {
   margin-left: 0; }
