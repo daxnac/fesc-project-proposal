@@ -3,7 +3,7 @@ google.charts.load('current', {packages: ['corechart']});
 google.charts.setOnLoadCallback(drawChartLine);
 google.charts.setOnLoadCallback(drawChartCol);
 
-
+// Draw Line Chart
 function drawChartLine() {
   var data = new google.visualization.arrayToDataTable([
     ['Year','Billion Btu'],
@@ -13,7 +13,6 @@ function drawChartLine() {
   var options = {
     title: 'Electricity Consumption',
     colors:['#00784B'],
-    width: 700,
     height: 600,
     curveType: 'none',
     tooltip: {trigger: 'selection'},
@@ -24,7 +23,7 @@ function drawChartLine() {
   chart.draw(data, options);
   }
 
-
+// Draw Column Chart
 function drawChartCol() {
   var data = google.visualization.arrayToDataTable([
     ['Year', 'Billion Btu'],
@@ -36,7 +35,6 @@ function drawChartCol() {
   var options = {
     title: 'Energy Consumption',
     colors: ['#981C1E'],
-    width: 700,
     height: 600,
     bar: { groupWidth: "75%" },
     legend: { position: 'bottom' },
@@ -45,3 +43,9 @@ function drawChartCol() {
   var chart = new google.visualization.ColumnChart(document.getElementById('chart_col'));
   chart.draw(data, options);
 }
+
+// Make charts responsive
+$(window).resize(function(){
+   drawChartLine();
+   drawChartCol();
+ });
