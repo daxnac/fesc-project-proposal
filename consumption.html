@@ -23,8 +23,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="styles/main.css"> 
-  <title>Florida Energy Systems Consortium (FESC) - Contact</title>  
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="js/charts.js"></script>
+  <title>Florida Energy Systems Consortium (FESC) - Energy Industry</title>  
 </head>
 <body>
   <header>
@@ -35,8 +37,8 @@
     <a href="index.html">Home</a>
     <a href="industry.html">Energy Industry/Research</a>
     <a href="education.html">Education</a>
-    <a href="consumption.html">Energy Consumption</a>
-    <a href="contact.html" class="active">Contact Us</a>
+    <a href="consumption.html" class="active">Energy Consumption</a>
+    <a href="contact.html">Contact Us</a>
     <a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-search"></i></a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -66,70 +68,33 @@
       </div>
     </div>
   </nav>
-  <div class="eneHeader">
-    <h2>Contact &amp; Directions</h2>
+  <div class="indHeader">
+   <h2>Energy Consumption</h2>
   </div>
   <main>
     <div class="section group">
       <div class="col span_2_of_3">
         <section>
-          <h3>Send us feedback</h3>
-          <form onsubmit="getEmail();" name="contact" id="emailForm">
-            <label>Full Name
-              <input type="text" id="fullname" name="fullname" placeholder="John Doe..." required>
-            </label>
-            <label>Email Address
-              <input type="email" id="emailadd" name="email" placeholder="e.g. john.doe@gmail.com" required>  
-            </label>
-            <label>Topic Area
-              <select id="fescAreas" name="area">
-                <option value="Education">Education</option>
-                <option value="Industry">Industry</option>
-                <option value="Energy Research">Energy Research</option>
-                <option value="University Partners">University Partners</option>
-                <option value="Jobs">Jobs</option>
-              </select>
-            </label>
-            <label>Feedback
-              <textarea id="subject" name="feedback" placeholder="Enter your questions or feedback here..." style="height:200px"></textarea>
-            </label>
-            <input type="submit" value="Submit">
-          </form>
+          <h3>Electricity Total Consumption Florida</h3>
+          <div id="chart_line"></div>
         </section>
-        
         <section>
-          <h3>Map & Directions</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.7479042419454!2d-82.34361012335077!3d29.649347764757504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe611193d4efb92ce!2sGrinter+Hall!5e0!3m2!1sen!2sus!4v1526575007818" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <h3>Renewable Energy Production Florida</h3>
+          <div id="chart_col"></div>
         </section>
       </div>
-      <aside class="col span_1_of_3">
-             <h4><i class="fas fa-address-card"></i>&nbsp;MAIN CONTACTS</h4><br>
-              <div class="card">
-          <img src="images/image00218-150x150.jpg" alt="Avatar">
-          <div class="container">
-          <p><b>Ms. Canan “Janan” Balaban</b></p> 
-          <p>Associate Director
-          cbalaban@ufl.edu
-          352 294 2027</p>
-          </div>
-        </div>
-        <br>
-        <div class="card">
-          <img src="images/David_Norton-small-225x300.jpg" alt="Avatar">
-          <div class="container">
-          <p><b>Dr. David Norton</b></p> 
-          <p>Interim Director<br>dpnorton@ufl.edu</p> 
-          </div>
-        </div>
-        <br>
-        
-        <br>
-        <h4><i class="fas fa-map-marker"></i>&nbsp;ADDRESS</h4><br>
-        272 Grinter Hall<br>
-        P.O. Box 115500<br>
-        Gainesville, FL 32611-5500
-      </aside>
+      <!-- Aside used on pages when needed for related links or resources -->
+      <div class="col span_1_of_3">	
+        <aside>
+          <h4><i class="fas fa-chart-area"></i>&nbsp;SOURCES</h4>
+          <p><strong>U.S. Energy Information Administration</strong><br><br>
+          Electricity total consumption Florida<br>
+          https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A<br><br>
+          Renewable energy production Florida<br>
+          https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A</p>
+        </aside>
       </div>
+    </div>
   </main>
   
   <footer>
