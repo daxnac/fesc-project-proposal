@@ -25,13 +25,12 @@
   <link rel="stylesheet" href="styles/main.css"> 
   <!-- VUE.js -->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>  
-   <script src="js/components.js"></script>
   <title>Florida Energy Systems Consortium (FESC) - Home</title>  
 </head>
 <body>
 <div id="app">
   <!-- VUE Header -->
-  <app-header title="FESC"></app-header>  
+  <app-header title="Florida Energy Systems Consortium (FESC)"></app-header>  
   
   <nav class="topnav" id="myTopnav">
     <a href="index.html" class="active">Home</a>
@@ -117,14 +116,10 @@
     </div>
   </main>	
   
-  <footer>
-    <div class="social">
-      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check+this+out"></a>
-      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdaxnac.github.io%2Fsocial-media%2F&layout=button_count&size=small&mobile_iframe=false&width=69&height=20&appId" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="copy">Copyright &copy; 2018 Florida Energy Systems Consortium. All Rights Reserved.</div>
-  </footer>
-  
+  <!-- Vue Footer-->
+  <app-footer></app-footer>
+ 
+  <script src="js/components.js"></script>
   <script src="js/script.js"></script>
   <script>
     //Twitter share button

@@ -22,17 +22,18 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!-- VUE.js -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>  
+  <script src="js/components.js"></script>
   <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="styles/main.css"> 
   <title>Florida Energy Systems Consortium (FESC) - Education</title>  
 </head>
 <body>
-  <header>
-    <div class="fesc-logo"><img src="images/fesc-logo.png" alt="FESC Logo"></div>
-    <div class="fesc-text"><h2>Florida Energy Systems Consortium (FESC)</h2></div>
-  </header>
+<div id="app">
+  <!-- VUE Header -->
+  <app-header title="Florida Energy Systems Consortium (FESC)"></app-header> 
+  
   <nav class="topnav" id="myTopnav">
     <a href="index.html">Home</a>
     <a href="industry.html">Energy Industry/Research</a>
@@ -98,33 +99,20 @@
       <div class="col span_1_of_3">
         <aside>
           <h4><i class="fas fa-graduation-cap"></i>&nbsp;UNIVERSITIES</h4>
-          <ul>
-            <li><a href="http://www.ufl.edu/" target="_blank">University of Florida</a></li>
-            <li><a href="http://www.fsu.edu/" target="_blank">Florida State University</a></li>
-            <li><a href="http://www.ucf.edu/" target="_blank">University of Central Florida</a></li>
-            <li><a href="http://www.usf.edu/" target="_blank">University of South Florida</a></li>
-            <li><a href="http://www.famu.edu/" target="_blank">Florida Agricultural and Mechanical University</a></li>
-            <li><a href="http://www.fau.edu/" target="_blank">Florida Atlantic University</a></li>
-            <li><a href="https://www.fgcu.edu/" target="_blank">Florida Gulf Coast University</a></li>
-            <li><a href="https://www.fiu.edu/" target="_blank">Florida International University</a></li>
-            <li><a href="https://www.ncf.edu/" target="_blank">New College of Florida</a></li>
-            <li><a href="http://www.unf.edu/" target="_blank">University of North Florida</a></li>
-            <li><a href="http://uwf.edu/" target="_blank">University of West Florida</a></li>
-            <li><a href="https://floridapolytechnic.org/" target="_blank">Florida Polytechnic University</a></li>
+          <!-- Vue component from data -->
+          <ul v-for="univ in institutions">
+            <li><a href="{{ univ.url }}" target="_blank">{{ univ.name }}</a></li>
           </ul>
         </aside>
       </div>
     </div>
   </main>
   
-  <footer>
-    <div class="social">
-      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check+this+out"></a>
-      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdaxnac.github.io%2Fsocial-media%2F&layout=button_count&size=small&mobile_iframe=false&width=69&height=20&appId" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="copy">Copyright &copy; 2018 Florida Energy Systems Consortium. All Rights Reserved.</div>
-  </footer>
+  <!-- Vue Footer-->
+  <app-footer></app-footer>
   
+  <script src="js/education.js"></script>
+  <script src="js/components.js"></script>
   <script src="js/script.js"></script>
   <script>
     //Twitter share button
@@ -153,5 +141,6 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+  </div>
 </body>
 </html>
