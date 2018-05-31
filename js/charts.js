@@ -33,7 +33,7 @@ function drawChartCol() {
     ]);
 
   var options = {
-    title: 'Energy Consumption',
+    title: 'Renewable Energy Production',
     colors: ['#981C1E'],
     height: 600,
     bar: { groupWidth: "75%" },
