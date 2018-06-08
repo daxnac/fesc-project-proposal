@@ -47,7 +47,7 @@ function getLineData(){
 function drawBasic(freshData) {
   freshData.unshift(["Year", "Billion BTUs"])
   var data = google.visualization.arrayToDataTable(freshData);
-
+  
   var options = {
     title: 'Energy Production in Florida',
     chartArea: {width: '100%'},
