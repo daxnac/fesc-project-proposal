@@ -1,7 +1,7 @@
 
 google.charts.load('current', {packages: ['corechart']});
 google.charts.setOnLoadCallback(drawChartLine);
-google.charts.setOnLoadCallback(drawChartCol);
+google.charts.setOnLoadCallback(getData);
 
 // Draw Line Chart
 function drawChartLine() {
@@ -23,29 +23,51 @@ function drawChartLine() {
   chart.draw(data, options);
   }
 
+
+
+
 // Draw Column Chart
-function drawChartCol() {
-  var data = google.visualization.arrayToDataTable([
-    ['Year', 'Billion Btu'],
-    ['2015',234192],['2014',226863],['2013',229666],['2012',220020],['2011',222956],['2010',223518],['2009',213642],['2008',195232],       ['2007',190489],['2006',185564],['2005',183175],['2004',179462],['2003',188473],['2002',174327],['2001',158038],['2000',194952],
-    ['1999',204114],['1998',205485],['1997',231308],['1996',240343],['1995',220211],['1994',215563],['1993',217028],['1992',230779],          ['1991',212955],['1990',198986],['1989',232261],['1988',113802],['1987',107606],['1986',116356],['1985',110698],['1984',108740],
-    ['1983',91705],['1982',104674],['1981',83117],['1980',90049],['1979',69419],['1978',65357],['1977',59953],['1976',56507],['1975',50007],['1974',52429],['1973',56250],['1972',54389],['1971',49968],['1970',51035],['1969',51489],['1968',49556],['1967',44550],['1966',42760],     ['1965',39916],['1964',39016],['1963',38613],['1962',35826],['1961',34417],['1960',35680]
-    ]);
+function drawBasic(freshData) {
+  freshData.unshift(["Year", "Billion BTUs"])
+  var data = google.visualization.arrayToDataTable(freshData);
 
   var options = {
-    title: 'Renewable Energy Production',
-    colors: ['#981C1E'],
-    height: 600,
-    bar: { groupWidth: "75%" },
-    legend: { position: 'bottom' },
+    title: 'Energy Production in Florida',
+    chartArea: {width: '100%'},
+    hAxis: {
+      title: 'BTUs',
+      minValue: 0
+    }
   };
 
   var chart = new google.visualization.ColumnChart(document.getElementById('chart_col'));
   chart.draw(data, options);
 }
 
+function getData(){
+  // Create a new request object
+  let request = new XMLHttpRequest()
+  // TODO: URL to contact goes here
+  let requestUrl = "https://api.eia.gov/series/?api_key=19f161a829f50e795db12f9a3c37b270&series_id=SEDS.REPRB.FL.A"
+  // Open a connection
+  request.open('GET', requestUrl, true)
+  // Callback for when the request completes
+  request.onload = function(){
+    let theActualData = JSON.parse(request.response).series[0].data
+    drawBasic(theActualData)
+  }
+  // Callback for when there's an error
+  request.error = function(err){
+    console.log("error is: ", err)
+  }
+  // Send the request to the specified URL
+  request.send()
+}
 // Make charts responsive
 $(window).resize(function(){
    drawChartLine();
-   drawChartCol();
+   drawBasic();
  });
+
+
+
