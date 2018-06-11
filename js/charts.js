@@ -52,10 +52,6 @@ function drawColumnChart(freshData) {
     title: 'Energy Production',
     colors:['#981C1E'],
     legend: { position: 'bottom' },
-    hAxis: {
-      title: 'Billion BTUs',
-      minValue: 0
-    }
   };
 
   var chart = new google.visualization.ColumnChart(document.getElementById('chart_col'));

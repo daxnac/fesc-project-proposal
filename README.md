@@ -12,9 +12,16 @@ Source: https://developers.google.com/chart/interactive/docs/gallery/linechart
 
 Due to just the two simple column data tables, array length and high numbers (Btu's), Line chart seemed logical to give it a better visual and level of detail.
 
+###Documentation and link to API Data
+
+https://www.eia.gov/opendata/qb.php?category=40236&sdid=SEDS.TETCB.FL.A 
+
 ## Chart 2: Column Chart
 
 Source: https://developers.google.com/chart/interactive/docs/gallery/columnchart
 
 Similar to the Electricity data on the line chart, very simple data, but wanted to try the column chart on this one to see how it will handle the array length. Then try different options to adjust the chart and bar sizes.
 
+###Documentation and link to API Data
+
+https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A
