@@ -44,15 +44,16 @@ function getLineData(){
 
 
 // Draw Column Chart
-function drawBasic(freshData) {
+function drawColumnChart(freshData) {
   freshData.unshift(["Year", "Billion BTUs"])
   var data = google.visualization.arrayToDataTable(freshData);
   
   var options = {
-    title: 'Energy Production in Florida',
-    chartArea: {width: '100%'},
+    title: 'Energy Production',
+    colors:['#981C1E'],
+    legend: { position: 'bottom' },
     hAxis: {
-      title: 'BTUs',
+      title: 'Billion BTUs',
       minValue: 0
     }
   };
@@ -71,7 +72,7 @@ function getColumnData(){
   // Callback for when the request completes
   request.onload = function(){
     let theActualData = JSON.parse(request.response).series[0].data
-    drawBasic(theActualData)
+    drawColumnChart(theActualData)
   }
   // Callback for when there's an error
   request.error = function(err){
@@ -83,7 +84,7 @@ function getColumnData(){
 // Make charts responsive
 $(window).resize(function(){
    drawChartLine();
-   drawBasic();
+   drawColumnChart();
  });
 
 
